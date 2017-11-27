@@ -46,6 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\TBAButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TBALabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TBAPanelButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TBASettingsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TBASettingsPanel.Designer.cs" />
+    <Compile Include="Controls\TBAStatisticsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TBAStatisticsPanel.Designer.cs" />
+    <Compile Include="Controls\TBATextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TBAWindowExitButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TBAWindowMaximizeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TBAWindowMinimizeButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +83,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme\ThemeDrawing.cs" />
+    <Compile Include="Theme\ThemeInteraction.cs" />
+    <Compile Include="Theme\ThemeSettings.cs" />
+    <Compile Include="Theme\ThemeStyling.cs" />
+    <Compile Include="Theme\ThemeWindowCommands.cs" />
+    <EmbeddedResource Include="Controls\TBASettingsPanel.resx" />
+    <EmbeddedResource Include="Controls\TBAStatisticsPanel.resx" />
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,9 +115,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Theme\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -2,8 +2,10 @@ C:\Users\dlgateley\Desktop\TBA\TBA\bin\Debug\TBA.exe.config
 C:\Users\dlgateley\Desktop\TBA\TBA\bin\Debug\TBA.exe
 C:\Users\dlgateley\Desktop\TBA\TBA\bin\Debug\TBA.pdb
 C:\Users\dlgateley\Desktop\TBA\TBA\obj\Debug\TBA.csprojResolveAssemblyReference.cache
-C:\Users\dlgateley\Desktop\TBA\TBA\obj\Debug\TBA.frmMain.resources
 C:\Users\dlgateley\Desktop\TBA\TBA\obj\Debug\TBA.Properties.Resources.resources
 C:\Users\dlgateley\Desktop\TBA\TBA\obj\Debug\TBA.csproj.GenerateResource.Cache
 C:\Users\dlgateley\Desktop\TBA\TBA\obj\Debug\TBA.exe
 C:\Users\dlgateley\Desktop\TBA\TBA\obj\Debug\TBA.pdb
+C:\Users\dlgateley\Desktop\TBA\TBA\obj\Debug\TBA.Controls.TBASettingsPanel.resources
+C:\Users\dlgateley\Desktop\TBA\TBA\obj\Debug\TBA.Controls.TBAStatisticsPanel.resources
+C:\Users\dlgateley\Desktop\TBA\TBA\obj\Debug\TBA.Forms.frmMain.resources

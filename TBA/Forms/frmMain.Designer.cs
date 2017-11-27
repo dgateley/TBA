@@ -1,4 +1,4 @@
-﻿namespace TBA
+﻿namespace TBA.Forms
 {
     partial class frmMain
     {
@@ -60,13 +60,13 @@
             // itmOpen
             // 
             this.itmOpen.Name = "itmOpen";
-            this.itmOpen.Size = new System.Drawing.Size(152, 22);
+            this.itmOpen.Size = new System.Drawing.Size(103, 22);
             this.itmOpen.Text = "Open";
             // 
             // itmExit
             // 
             this.itmExit.Name = "itmExit";
-            this.itmExit.Size = new System.Drawing.Size(152, 22);
+            this.itmExit.Size = new System.Drawing.Size(103, 22);
             this.itmExit.Text = "Exit";
             // 
             // itmHelp
@@ -80,7 +80,7 @@
             // itmAbout
             // 
             this.itmAbout.Name = "itmAbout";
-            this.itmAbout.Size = new System.Drawing.Size(152, 22);
+            this.itmAbout.Size = new System.Drawing.Size(107, 22);
             this.itmAbout.Text = "About";
             // 
             // frmMain
@@ -92,6 +92,9 @@
             this.MainMenuStrip = this.mnuMenu;
             this.Name = "frmMain";
             this.Text = "TBA";
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmMain_Paint);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmMain_MouseDown);
             this.mnuMenu.ResumeLayout(false);
             this.mnuMenu.PerformLayout();
             this.ResumeLayout(false);
