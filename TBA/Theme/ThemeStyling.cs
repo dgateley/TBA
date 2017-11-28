@@ -29,24 +29,34 @@ namespace TBA.Theme
             exitButton.Location = new Point(form.Width - exitButton.Width, 0);
             exitButton.Clickable = settings.Closable;
             exitButton.Type = settings.CloseType;
+            exitButton.Anchor = AnchorStyles.Right | AnchorStyles.Top;
 
             TBAWindowMaximizeButton maximizeButton = new TBAWindowMaximizeButton();
             form.Controls.Add(maximizeButton);
             maximizeButton.Size = new Size(28, 28);
             maximizeButton.Location = new Point(form.Width - exitButton.Width - maximizeButton.Width, 0);
             maximizeButton.Clickable = settings.Maximizable;
+            maximizeButton.Anchor = AnchorStyles.Right | AnchorStyles.Top;
 
             TBAWindowMinimizeButton minimizeButton = new TBAWindowMinimizeButton();
             form.Controls.Add(minimizeButton);
             minimizeButton.Size = new Size(28, 28);
             minimizeButton.Location = new Point(form.Width - exitButton.Width - maximizeButton.Width - minimizeButton.Width, 0);
             minimizeButton.Clickable = settings.Minimizable;
+            minimizeButton.Anchor = AnchorStyles.Right | AnchorStyles.Top;
 
             foreach (var control in form.Controls)
             {
-                if (control is TextBox)
+                if (control is MenuStrip)
                 {
+                    // Set size/location
+                    MenuStrip menu = (MenuStrip)control;
+                    menu.Dock = DockStyle.None;
+                    menu.Location = new Point(0, 28);
+                    menu.Padding = new Padding(0, 0, Screen.FromControl(form).Bounds.Width, 0);
 
+                    // Set colors
+                    menu.BackColor = ThemeSettings.ColorForeground;
                 }
             }
         }

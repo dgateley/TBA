@@ -46,25 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\TBAButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\TBALabel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\TBAPanelButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls\TBASettingsPanel.cs">
+    <Compile Include="Controls\TBAEditor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\TBASettingsPanel.Designer.cs" />
-    <Compile Include="Controls\TBAStatisticsPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\TBAStatisticsPanel.Designer.cs" />
-    <Compile Include="Controls\TBATextBox.cs">
-      <SubType>Component</SubType>
+    <Compile Include="Controls\TBAEditor.Designer.cs">
+      <DependentUpon>TBAEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\TBAWindowExitButton.cs">
       <SubType>Component</SubType>
@@ -88,8 +74,6 @@
     <Compile Include="Theme\ThemeSettings.cs" />
     <Compile Include="Theme\ThemeStyling.cs" />
     <Compile Include="Theme\ThemeWindowCommands.cs" />
-    <EmbeddedResource Include="Controls\TBASettingsPanel.resx" />
-    <EmbeddedResource Include="Controls\TBAStatisticsPanel.resx" />
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>

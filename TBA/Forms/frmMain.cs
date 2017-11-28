@@ -34,7 +34,7 @@ namespace TBA.Forms
         /// <param name="e"></param>
         private void frmMain_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         /// <summary>
@@ -46,8 +46,6 @@ namespace TBA.Forms
         {
             // Draw theme objects
             ThemeDrawing.DrawWindowHandle(this);
-            ThemeDrawing.DrawMainHeader(this);
-            ThemeDrawing.DrawMainTreeBorder(this);
         }
 
         /// <summary>
