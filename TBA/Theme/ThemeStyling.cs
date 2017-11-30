@@ -45,10 +45,10 @@ namespace TBA.Theme
             minimizeButton.Clickable = settings.Minimizable;
             minimizeButton.Anchor = AnchorStyles.Right | AnchorStyles.Top;
 
-            foreach (var control in form.Controls)
+            foreach (Control control in form.Controls)
             {
                 if (control is MenuStrip)
-                {
+                {   
                     // Set size/location
                     MenuStrip menu = (MenuStrip)control;
                     menu.Dock = DockStyle.None;
@@ -56,7 +56,8 @@ namespace TBA.Theme
                     menu.Padding = new Padding(0, 0, Screen.FromControl(form).Bounds.Width, 0);
 
                     // Set colors
-                    menu.BackColor = ThemeSettings.ColorForeground;
+                    menu.BackColor = ThemeSettings.MenuViewBackgroundColor;
+                    menu.ForeColor = ThemeSettings.MenuViewForegroundColor;
                 }
             }
         }

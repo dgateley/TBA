@@ -52,6 +52,12 @@
     <Compile Include="Controls\TBAEditor.Designer.cs">
       <DependentUpon>TBAEditor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\TBAHexNode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TBAHexNode.Designer.cs">
+      <DependentUpon>TBAHexNode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\TBAWindowExitButton.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -74,6 +80,7 @@
     <Compile Include="Theme\ThemeSettings.cs" />
     <Compile Include="Theme\ThemeStyling.cs" />
     <Compile Include="Theme\ThemeWindowCommands.cs" />
+    <Compile Include="Util\FileInfo.cs" />
     <EmbeddedResource Include="Forms\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>

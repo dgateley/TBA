@@ -78,8 +78,8 @@ namespace TBA.Theme
         public static Color ProgressBarBackgroundColor { get; set; } = Color.FromArgb(255, 255, 255, 255);
 
         // Menu View
-        public static Color MenuViewForegroundCoor { get; set; } = TextColor;
-        public static Color MenuViewBackgroundColor { get; set; } = Color.FromArgb(255, 140, 140, 140);
+        public static Color MenuViewForegroundColor { get; set; } = TextColor;
+        public static Color MenuViewBackgroundColor { get; set; } = ColorBlack;
 
 
         // Labels

@@ -19,7 +19,8 @@ namespace TBA.Theme
         public static void DrawWindowHandle(Form form)
         {
             SolidBrush backgroundBrush = new SolidBrush(ThemeSettings.WindowHandleBackgroundColor);
-            SolidBrush foregroundBrush = new SolidBrush(ThemeSettings.WindowHandleForegroundColor);
+            //SolidBrush foregroundBrush = new SolidBrush(ThemeSettings.WindowHandleForegroundColor);
+            SolidBrush foregroundBrush = new SolidBrush(Color.White);
             Graphics graphics = form.CreateGraphics();
 
             graphics.FillRectangle(backgroundBrush, new Rectangle(0, 0, form.Width, 28));
