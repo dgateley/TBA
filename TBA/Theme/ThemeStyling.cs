@@ -47,18 +47,41 @@ namespace TBA.Theme
 
             foreach (Control control in form.Controls)
             {
-                if (control is MenuStrip)
-                {   
-                    // Set size/location
-                    MenuStrip menu = (MenuStrip)control;
-                    menu.Dock = DockStyle.None;
-                    menu.Location = new Point(0, 28);
-                    menu.Padding = new Padding(0, 0, Screen.FromControl(form).Bounds.Width, 0);
+                StyleControl(control);
+            }
+        }
 
-                    // Set colors
-                    menu.BackColor = ThemeSettings.MenuViewBackgroundColor;
-                    menu.ForeColor = ThemeSettings.MenuViewForegroundColor;
+        private static void StyleControl(Control control)
+        {
+            if (control.HasChildren)
+            {
+                foreach (Control c in control.Controls)
+                {
+                    StyleControl(c);
                 }
+            }
+
+            if (control is MenuStrip)
+            {
+                // Set size/location
+                MenuStrip menu = (MenuStrip)control;
+                menu.Dock = DockStyle.None;
+                menu.Location = new Point(0, 28);
+                menu.Padding = new Padding(0, 0, 9999, 0);
+
+                // Set colors
+                menu.BackColor = ThemeSettings.MenuViewBackgroundColor;
+                menu.ForeColor = ThemeSettings.MenuViewForegroundColor;
+            }
+
+            if (control is Label)
+            {
+                Label label = (Label)control;
+
+                // Set colors
+ 
+                //label.BackColor = ThemeSettings.;
+                label.ForeColor = ThemeSettings.TextColor;
             }
         }
 

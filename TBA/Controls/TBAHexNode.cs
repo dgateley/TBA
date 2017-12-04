@@ -17,11 +17,14 @@ namespace TBA.Controls
 
 
         // Set up control
-        public TBAHexNode()
+        public TBAHexNode(byte b)
         {
             InitializeComponent();
 
-            
+            // Add textbox
+            text = new TextBox();
+            text.Text = b.ToString("X2");
+            Controls.Add(text);
         }
     }
 }

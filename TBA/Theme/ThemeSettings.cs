@@ -58,7 +58,7 @@ namespace TBA.Theme
         public static Color WindowMaximizeButtonForegroundColor { get; set; } = ColorForeground;
         public static Color WindowMaximizeButtonBackgroundColor { get; set; } = ColorBlack;
         public static Color WindowMaximizeButtonBackgroundHoveredColor { get; set; } = ColorGray;
-        public static Color WindowButtonDisabledColor { get; set; } = Color.FromArgb(255, 210, 210, 210);
+        public static Color WindowButtonDisabledColor { get; set; } = ColorGray;
 
         // TextBoxes
         public static Color TextBoxBackgroundColor { get; set; } = Color.FromArgb(255, 250, 250, 250);
